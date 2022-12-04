@@ -1,0 +1,12 @@
+{
+  "name": "node-day1",
+  "version": "1.0.0",
+  "description": "Retos Node - Day 1 (Codenotch)",
+  "main": "._reto1.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Roxy Pérez",
+  "license": "ISC"
+}
