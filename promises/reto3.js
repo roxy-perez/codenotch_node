@@ -30,7 +30,7 @@ function askHero() {
     return qst;
 }
 
-async function writeReadFile() {
+async function writeReadFile(hero) {
     try {
         await fs.writeFile(filename, JSON.stringify(hero));
         const file = await fs.readFile(filename, { encoding: 'utf8' });
@@ -41,5 +41,5 @@ async function writeReadFile() {
 }
 
 askHero()
-    .then(result => { console.log('Resultado promesa: ', result); writeReadFile(); })
+    .then(result => { console.log('Resultado promesa: ', result); writeReadFile(result); })
     .catch(err => console.log(err));
