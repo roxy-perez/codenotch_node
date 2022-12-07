@@ -4,7 +4,7 @@ const fs = require('fs/promises');
 let hero = {};
 let filename = './hero2.json';
 
-function askHero() {
+function askHero(question) {
     const qst = new Promise((resolve, reject) => {
 
         const rl = readline.createInterface({
@@ -12,18 +12,9 @@ function askHero() {
             output: process.stdout
         });
 
-        rl.question('Escribe el nombre del heroe: ', (name) => {
-            rl.question('Escribe su apellido: ', (surname) => {
-                rl.question('Escribe su edad: ', (age) => {
-                    hero.name = name;
-                    hero.surname = surname;
-                    hero.age = age;
-
-                    resolve(hero);
-
-                    rl.close();
-                });
-            });
+        rl.question(question, (answer) => {
+            resolve(answer);
+            rl.close();
         });
     });
 
@@ -40,6 +31,17 @@ async function writeReadFile(hero) {
     }
 }
 
-askHero()
-    .then(result => { console.log('Resultado promesa: ', result); writeReadFile(result); })
+askHero('Escribe el nombre del heroe: ')
+    .then(result => {
+        hero.name = result;
+        return askHero('Escribe su apellido: ');
+    })
+    .then(result => {
+        hero.surname = result;
+        return askHero('Escribe su edad: ');
+    })
+    .then(result => {
+        hero.age = result;
+        writeReadFile(hero);
+    })
     .catch(err => console.log(err));
