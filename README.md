@@ -16,3 +16,6 @@
 - Carpeta `promises` 
 - El `reto2.js` creará un fichero json llamado `hero.json`
 - El `reto3.js` creará un fichero json llamado `hero2.json`
+
+##### RAMA :: Day3
+- Retos: 1 y 2 realizados con los módulos http y express de NodeJS
