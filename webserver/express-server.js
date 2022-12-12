@@ -16,6 +16,6 @@ app.get('/', (req, res) => {
 app.get("/bye", (req, res) => {
     res.set('Content-Type', 'application/json');
     res.status(200).send({ ok: true, message: "Adiós!" });
-  });
+});
 
 app.listen(3000);
