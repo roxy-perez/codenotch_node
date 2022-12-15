@@ -19,3 +19,14 @@
 
 ##### RAMA :: Day3
 - Retos: 1 y 2 realizados con los módulos http y express de NodeJS
+
+##### RAMA :: Day4
+- Reto realizado con el módulo Express de NodeJS y TypeScript
+- Módulos instalados: `typescript @types/express @types/node node-ts`
+- Ejemplos de llamadas:
+*GET: localhost:3000/profesional?name=Katie McGrath
+POST: localhost:3000/profesional
+PUT: localhost:3000/profesional/?name=Katie McGrath
+DELETE: localhost:3000/profesional
+
+
