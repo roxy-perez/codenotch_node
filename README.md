@@ -30,7 +30,6 @@
   - **DELETE:** localhost:3000/profesional
 
 - Ejemplo de BODY: 
-
  `{
   "name": "Katie McGrath",
   "age": 39,
