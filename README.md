@@ -24,10 +24,10 @@
 - Reto realizado con el módulo Express de NodeJS y TypeScript
 - Módulos instalados: `typescript @types/express @types/node node-ts`
 - Ejemplos de llamadas:
-  **GET:** localhost:3000/profesional?name=Katie McGrath
-  **POST:** localhost:3000/profesional
-  **PUT:** localhost:3000/profesional/?name=Katie McGrath
-  **DELETE:** localhost:3000/profesional
+ - **GET:** localhost:3000/profesional?name=Katie McGrath
+ - **POST:** localhost:3000/profesional
+ - **PUT:** localhost:3000/profesional/?name=Katie McGrath
+ - **DELETE:** localhost:3000/profesional
 
 - Ejemplo de BODY: 
 `{
