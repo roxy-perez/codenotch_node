@@ -42,4 +42,13 @@
   "profession": "actress"
  } `
 
+##### RAMA :: Day5
+- Carpeta `api-rest-professional` 
+- Ejecución del backend: `npm run dev`
+- Ejemplos de llamadas:
+  - Listar todos los Profesionales: **GET:** localhost:3000/
+  - Obtener un Profesional: **GET:** localhost:3000/profesional?name=Katie McGrath
+  - Crear un profesional: **POST:** localhost:3000/profesional
+  - Actualizar un profesional: **PUT:** localhost:3000/profesional/?name=Katie McGrath
+  - Eliminar un profesional: **DELETE:** localhost:3000/profesional
 
