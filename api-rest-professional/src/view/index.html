@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional App</title>
+    <script src="./js/jQuery.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <h1>Listado de Profesionales</h1>
+    </div>
+<div class="container">
+    
+    <div class="myProfs">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                    <th>Peso</th>
+                    <th>Altura</th>
+                    <th>Retirad@?</th>
+                    <th>Nacionalidad</th>
+                    <th># de Oscars</th>
+                    <th>Profesión</th>
+                </tr>
+            </thead>
+            <tbody id="data-pro">
+                <!-- Professionals data from javascript file in here. -->
+            </tbody>
+        </table>
+    </div>
+
+    <form class="form-proffesional" id="form-proffesional" type="post">
+        <h1>Datos del Profesional</h1>
+        <input class="controls" type="text" name="name" id="name" placeholder="Ingrese el nombre ">
+        <input class="controls" type="number" name="age" id="age" min="18" placeholder="Ingrese edad">
+        <input class="controls" type="number" step="0.01" name="weight" id="weight" placeholder="Ingrese el peso">
+        <input class="controls" type="number" step="0.01" name="height" id="height" placeholder="Ingrese la altura">
+        <div class="controls"><input type="checkbox" name="isRetired" id="isRetired" value="false">
+            <label for="isRetired">Reirad@?</label>
+        </div>
+
+        <input class="controls" type="text" name="nationality" id="nationality" placeholder="Ingrese nacionalidad">
+        <input class="controls" type="number" name="oscarsNumber" min="0" id="oscarsNumber"
+            placeholder="Ingrese # de Oscars ganados">
+        <input class="controls" type="text" name="profession" id="profession" placeholder="Ingrese profesión">
+        <input class="btn" id="btn" type="submit" value="Guardar profesional">
+        <div class="search">
+            <input type="text" name="search" id="input-search" placeholder="Nombre a buscar">
+            <input type="button" class="btn" id="btn-search" value="Buscar">
+            <input type="button" class="btn" id="btn-del" value="Eliminar">
+            <input type="button" class="btn" id="btn-clear" value="Limpiar">
+        </div>
+    </form>
+
+</div>
+    
+
+   
+    <footer class="fixed_footer">
+        <div class="content">
+            <p>© By Roxy Pérez. <br>
+                For CodeNotch Academy.
+            </p>
+            <p>My first APIRest with NodeJS.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
